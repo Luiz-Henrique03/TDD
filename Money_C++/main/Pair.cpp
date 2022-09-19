@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Pair(string from, string to{
-   this->from = from;
-    this->to = to;
- }
+Pair::Pair(string from, string to){
+    from = from;
+    to = to;
+}

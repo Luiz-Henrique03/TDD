@@ -2,21 +2,24 @@
 #include "Money.h"
 #include <map>
 #include <iostream>
+#include <string>
 
-Bank() {
+using namespace std;
+
+Bank::Bank(){
 
 }
 
-Money Reduce(Expression source, string to) {
-    return source.Reduce(this, to);
+Money Bank::Reduce(Expression source, string to) {
+    return source.Reduce(this,to);
 }
 
-void addRate(string to, string from, int rate) {
-    this->rates.insert(pair<Pair, int>(new Pair(from, to), rate));
+void Bank::addRate(string to, string from, int rate) {
+    this->rates.insert(new Pair(from, to),rate);
 }
 
 
-int rate(string from, string to) {
+int Bank::rate(string from, string to) {
     if (from == to) return 1;
     int rate = this->rates.at(new Pair(from, to));
     return rate;

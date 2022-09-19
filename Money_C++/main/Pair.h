@@ -1,6 +1,12 @@
+#pragma once
+
+#include <string>
+
+using namespace std;
+
 class Pair{
 
- private:
+ protected:
 
    const string from;
    const string to;

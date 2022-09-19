@@ -1,14 +1,16 @@
-#include"Expression.h"
+#pragma once
+
 #include "Sum.h"
 #include <string>
-
+#include "Expression.h"
+class Bank;
 
 class Money : public Expression{
    
  protected:
     
-    int amount;
-    string currency;
+   int amount;
+   string currency;
      
 
  public:
@@ -21,14 +23,12 @@ class Money : public Expression{
 
     Money franc(int amount);
 
-    virtual Expression Times(int multiplier) override;
+    virtual Expression* Times(int multiplier) override;
 
-    virtual Expression plus(Expression addend) override;
-
-    Money plus(Money addend);
+    virtual Expression* plus(Expression addend) override;
 
     string Currency();
  
-    virtual Money Reduce(Bank bank, string to);
+    Money Reduce(Bank* bank, string to);
  
 };

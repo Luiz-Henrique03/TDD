@@ -1,0 +1,58 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6bd7a/fast && /usr/bin/make -f CMakeFiles/cmTC_6bd7a.dir/build.make CMakeFiles/cmTC_6bd7a.dir/build
+make[1]: Entrando no diretório '/home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6bd7a.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_6bd7a.dir/src.c.o   -c /home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6bd7a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6bd7a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_6bd7a.dir/src.c.o  -o cmTC_6bd7a 
+/usr/bin/ld: CMakeFiles/cmTC_6bd7a.dir/src.c.o: na função "main":
+src.c:(.text+0x46): referência não definida para "pthread_create"
+/usr/bin/ld: src.c:(.text+0x52): referência não definida para "pthread_detach"
+/usr/bin/ld: src.c:(.text+0x63): referência não definida para "pthread_join"
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_6bd7a.dir/build.make:87: cmTC_6bd7a] Erro 1
+make[1]: Saindo do diretório '/home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6bd7a/fast] Erro 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_27ceb/fast && /usr/bin/make -f CMakeFiles/cmTC_27ceb.dir/build.make CMakeFiles/cmTC_27ceb.dir/build
+make[1]: Entrando no diretório '/home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27ceb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_27ceb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_27ceb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27ceb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_27ceb.dir/CheckFunctionExists.c.o  -o cmTC_27ceb  -lpthreads 
+/usr/bin/ld: não foi possível localizar -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_27ceb.dir/build.make:87: cmTC_27ceb] Erro 1
+make[1]: Saindo do diretório '/home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_27ceb/fast] Erro 2
+
+
+
