@@ -8,19 +8,19 @@
 class Bank{
  
 protected:
+
    const map<Pair,int> rates;
 
 public:
-      Bank();
 
-      Money Reduce(Expression source, string to);
+    Bank();
 
-      void addRate(string to, string from, int rate);
+    Money Reduce(Expression source, string to);
+
+    void addRate(string to, string from, int rate);
 
     
-      int rate(string from, string to);
+    int rate(string from, string to);
     
-      
-
 
 };

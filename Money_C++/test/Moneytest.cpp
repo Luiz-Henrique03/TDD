@@ -6,8 +6,9 @@
 
 
 TEST(TestMultiplication, DollarMultiplicacao){
+  Money* money = new Money();
   Money five = five.dollar(5);
-  EXPECT_EQ(five.dollar(10), five.Times(2));
+  EXPECT_EQ(money->dollar(10), five.Times(2));
 }
 
 

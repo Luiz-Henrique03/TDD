@@ -13,6 +13,6 @@ protected:
 
 public:
 
-     Pair(string from, string to);
+   Pair(string from, string to);
     
 };

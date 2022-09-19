@@ -7,5 +7,5 @@
 }
 
 Expression* Sum::plus(Expression addend){
-    return new Sum(this->augend,addend);
+    return new Sum(this->augend, addend);
 }

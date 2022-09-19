@@ -13,7 +13,4 @@ public:
     
     virtual Expression* plus(Expression addend) override;
     
-   
-
-  
 };

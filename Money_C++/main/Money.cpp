@@ -16,11 +16,11 @@ Money::Money() {
 }
 
 Money Money::dollar(int amount) {
-    return Money(amount, "USD");
+    return new Money(amount, "USD");
 }
 
 Money Money::franc(int amount) {
-    return Money(amount, "CHF");
+    return new Money(amount, "CHF");
 }
 
 Expression* Money::Times(int multiplier) {

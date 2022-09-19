@@ -25,4 +25,3 @@ int Bank::rate(string from, string to) {
     return rate;
 }
 
-
