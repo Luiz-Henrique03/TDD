@@ -7,10 +7,10 @@
 
 class Bank{
  
-  protected:
+protected:
    const map<Pair,int> rates;
 
-  public:
+public:
       Bank();
 
       Money Reduce(Expression source, string to);

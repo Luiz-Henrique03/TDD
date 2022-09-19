@@ -7,13 +7,13 @@ class Bank;
 
 class Money : public Expression{
    
- protected:
+protected:
     
    int amount;
    string currency;
      
 
- public:
+public:
 
     Money(int amount, string currency);
 

@@ -6,12 +6,12 @@ using namespace std;
 
 class Pair{
 
- protected:
+protected:
 
    const string from;
    const string to;
 
- public:
+public:
 
      Pair(string from, string to);
     
