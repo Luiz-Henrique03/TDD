@@ -7,20 +7,20 @@
 
 class Bank{
  
-protected:
+  protected:
 
-   const map<Pair,int> rates;
+    const map<Pair,int> rates;
 
-public:
+  public:
 
-    Bank();
+      Bank();
 
-    Money Reduce(Expression source, string to);
+      Money Reduce(Expression source, string to);
 
-    void addRate(string to, string from, int rate);
+      void addRate(string to, string from, int rate);
 
-    
-    int rate(string from, string to);
-    
+      
+      int rate(string from, string to);
+      
 
 };

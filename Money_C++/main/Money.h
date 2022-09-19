@@ -7,28 +7,28 @@ class Bank;
 
 class Money : public Expression{
    
-protected:
-    
-   int amount;
-   string currency;
-     
+  protected:
+      
+    int amount;
+    string currency;
+      
 
-public:
+  public:
 
-    Money(int amount, string currency);
+      Money(int amount, string currency);
 
-    Money();
+      Money();
 
-    Money dollar(int amount);
+      Money dollar(int amount);
 
-    Money franc(int amount);
+      Money franc(int amount);
 
-    virtual Expression* Times(int multiplier) override;
+      virtual Expression* Times(int multiplier) override;
 
-    virtual Expression* plus(Expression addend) override;
+      virtual Expression* plus(Expression addend) override;
 
-    string Currency();
- 
-    Money Reduce(Bank* bank, string to);
+      string Currency();
+  
+      Money Reduce(Bank* bank, string to);
  
 };
