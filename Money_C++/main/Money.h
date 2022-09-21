@@ -16,19 +16,12 @@ class Money : public Expression{
   public:
 
       Money(int amount, string currency);
-
       Money();
-
       Money dollar(int amount);
-
       Money franc(int amount);
-
       virtual Expression* Times(int multiplier) override;
-
       virtual Expression* plus(Expression addend) override;
-
       string Currency();
-  
       Money Reduce(Bank* bank, string to);
  
 };

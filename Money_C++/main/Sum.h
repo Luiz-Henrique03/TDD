@@ -9,8 +9,7 @@ class Sum : public Expression{
         Expression augend;
         Expression addend;
         
-        Sum(Expression augend, Expression addend);
-        
+        Sum(Expression augend, Expression addend);  
         virtual Expression* plus(Expression addend) override;
     
 };
