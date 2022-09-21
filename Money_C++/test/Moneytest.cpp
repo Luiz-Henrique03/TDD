@@ -11,7 +11,6 @@ TEST(TestMultiplication, DollarMultiplicacao){
   EXPECT_EQ(money->dollar(10), five.Times(2));
 }
 
-
 TEST(TestSimpleAddition, TestSimpleAddition){
   Money* money = new Money();
   Money five = five.dollar(5);
@@ -45,8 +44,6 @@ TEST(TestReduceMoney, TestReduceMoney){
   EXPECT_EQ(money->dollar(1), result);
 }
 
-
-
 TEST(testSumPlusMoney, testSumPlusMoney){
   Money* money = new Money(); 
   Expression fiveBucks = money->dollar(5);
@@ -58,5 +55,9 @@ TEST(testSumPlusMoney, testSumPlusMoney){
   EXPECT_EQ(money->dollar(15),result);
 }
 
+int main(int argc, char **argv){
+  testing::InitGoogleTest(&argc,argv);
+  return RUN_ALL_TESTS();
+}
 
 
