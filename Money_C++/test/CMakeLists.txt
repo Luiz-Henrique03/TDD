@@ -1,25 +1,45 @@
-cmake_minimum_required(VERSION 3.14)
-project(my_project)
+cmake_minimum_required(VERSION 3.11)
+project(tdd-book)
 
-# GoogleTest requires at least C++14
-set(CMAKE_CXX_STANDARD 14)
+set(CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include(FetchContent)
-FetchContent_Declare(
-  googletest
-  GIT_REPOSITORY https://github.com/google/googletest.git
-  GIT_TAG release-1.12.1
-)
-# For Windows: Prevent overriding the parent project's compiler/linker settings
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-FetchContent_MakeAvailable(googletest)
+include_directories(inc)
 
-add_executable(
-  Moneytest
-  Moneytest.cpp
-)
+include(CTest)
+if(BUILD_TESTING)
+    enable_testing()
+    
+    # download googltest. Requires CMake 3.11+
+    include(FetchContent)
 
-target_link_libraries(
-  Moneytest
-  GTest::gtest_main
-)
+    FetchContent_Declare(
+        googletest
+        GIT_REPOSITORY https://github.com/google/googletest.git
+        GIT_TAG        release-1.12.1
+    )
+
+    FetchContent_GetProperties(googletest)
+    if(NOT googletest_POPULATED)
+        FetchContent_Populate(googletest)
+        add_subdirectory(
+            ${googletest_SOURCE_DIR} 
+            ${googletest_BINARY_DIR}
+        )
+    endif()
+
+
+    add_executable(
+        money_test 
+        src/money.cpp
+        test/money_test.cpp
+    ) # add this executable
+    
+    target_link_libraries(
+        money_test 
+        GTest::gtest_main
+    ) # link google test to this executable
+
+    include(GoogleTest)
+    gtest_discover_tests(money_test)
+endif()
