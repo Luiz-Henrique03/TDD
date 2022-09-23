@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/money_test.dir/Moneytest.cpp.o  -o money_test  lib/libgtest_main.a lib/libgtest.a -lpthread 

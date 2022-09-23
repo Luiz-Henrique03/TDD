@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.11)
 project(tdd-book)
 
-set(CXX_STANDARD 11)
+set(CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(inc)
@@ -31,8 +31,8 @@ if(BUILD_TESTING)
 
     add_executable(
         money_test 
-        src/money.cpp
-        test/money_test.cpp
+        /home/luiz/TDD/Money_C++/main/src/Money.cpp
+        Moneytest.cpp
     ) # add this executable
     
     target_link_libraries(

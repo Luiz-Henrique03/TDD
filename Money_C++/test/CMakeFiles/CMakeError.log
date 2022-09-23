@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_7a5b3/fast && /usr/bin/make -f CMakeFiles/cmTC_7a5b3.dir/build.make CMakeFiles/cmTC_7a5b3.dir/build
+Run Build Command(s):/usr/bin/make cmTC_0e128/fast && /usr/bin/make -f CMakeFiles/cmTC_0e128.dir/build.make CMakeFiles/cmTC_0e128.dir/build
 make[1]: Entrando no diretório '/home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7a5b3.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_7a5b3.dir/src.c.o   -c /home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_7a5b3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a5b3.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_7a5b3.dir/src.c.o  -o cmTC_7a5b3 
-/usr/bin/ld: CMakeFiles/cmTC_7a5b3.dir/src.c.o: na função "main":
+Building C object CMakeFiles/cmTC_0e128.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_0e128.dir/src.c.o   -c /home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_0e128
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e128.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_0e128.dir/src.c.o  -o cmTC_0e128 
+/usr/bin/ld: CMakeFiles/cmTC_0e128.dir/src.c.o: na função "main":
 src.c:(.text+0x46): referência não definida para "pthread_create"
 /usr/bin/ld: src.c:(.text+0x52): referência não definida para "pthread_detach"
 /usr/bin/ld: src.c:(.text+0x63): referência não definida para "pthread_join"
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_7a5b3.dir/build.make:87: cmTC_7a5b3] Erro 1
+make[1]: *** [CMakeFiles/cmTC_0e128.dir/build.make:87: cmTC_0e128] Erro 1
 make[1]: Saindo do diretório '/home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_7a5b3/fast] Erro 2
+make: *** [Makefile:121: cmTC_0e128/fast] Erro 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_76f4c/fast && /usr/bin/make -f CMakeFiles/cmTC_76f4c.dir/build.make CMakeFiles/cmTC_76f4c.dir/build
+Run Build Command(s):/usr/bin/make cmTC_19e67/fast && /usr/bin/make -f CMakeFiles/cmTC_19e67.dir/build.make CMakeFiles/cmTC_19e67.dir/build
 make[1]: Entrando no diretório '/home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_76f4c.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_76f4c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_76f4c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76f4c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_76f4c.dir/CheckFunctionExists.c.o  -o cmTC_76f4c  -lpthreads 
+Building C object CMakeFiles/cmTC_19e67.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_19e67.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_19e67
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19e67.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_19e67.dir/CheckFunctionExists.c.o  -o cmTC_19e67  -lpthreads 
 /usr/bin/ld: não foi possível localizar -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_76f4c.dir/build.make:87: cmTC_76f4c] Erro 1
+make[1]: *** [CMakeFiles/cmTC_19e67.dir/build.make:87: cmTC_19e67] Erro 1
 make[1]: Saindo do diretório '/home/luiz/TDD/Money_C++/test/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_76f4c/fast] Erro 2
+make: *** [Makefile:121: cmTC_19e67/fast] Erro 2
 
 
 
