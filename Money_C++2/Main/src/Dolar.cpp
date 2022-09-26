@@ -9,7 +9,3 @@ Dolar::Dolar(int Amount){
 
 
 
-Dolar* Dolar::times(int multiplier){
-
-        return new Dolar(Amount *multiplier);
-}

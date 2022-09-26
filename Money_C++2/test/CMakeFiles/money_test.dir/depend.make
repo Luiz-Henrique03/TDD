@@ -35,6 +35,8 @@ CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.o: /home/luiz/M
 CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.o: /home/luiz/Money_C++/Main/lib/Money.h
 CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.o: /home/luiz/Money_C++/Main/src/Franc.cpp
 
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o: /home/luiz/Money_C++/Main/lib/Dolar.h
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o: /home/luiz/Money_C++/Main/lib/Franc.h
 CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o: /home/luiz/Money_C++/Main/lib/Money.h
 CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o: /home/luiz/Money_C++/Main/src/Money.cpp
 

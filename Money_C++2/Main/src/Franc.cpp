@@ -7,7 +7,3 @@ Franc::Franc(int Amount){
     this->Amount = Amount;
 }
 
-Franc* Franc::times(int multiplier){
-
-        return new Franc(Amount *multiplier);
-}

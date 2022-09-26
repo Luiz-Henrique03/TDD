@@ -5,26 +5,30 @@
 
 
 TEST(Multiplicacao, TestDolarMultiplicacao){
-    Dolar* five = new Dolar(5);
-    Dolar* Product = five->times(2);
-    EXPECT_EQ((new Dolar(10))->Amount,Product->Amount);
+    Money* money = new Money();
+    Money* five = money->dolar(5);
+    Money* Product = five->times(2);
+    EXPECT_EQ((money->dolar(10))->Amount,Product->Amount);
     Product = five->times(3);
-    EXPECT_EQ((new Dolar(15))->Amount,Product->Amount);
+    EXPECT_EQ((money->dolar(15))->Amount,Product->Amount);
 }
 
 TEST(TestEquality, EqualityBetweenCoins){
+
+    Money* money = new Money();
    
-    ASSERT_TRUE((new Dolar(5))->Equals(new Dolar(5)));
-    ASSERT_FALSE((new Dolar(5))->Equals(new Dolar(6)));
-    ASSERT_TRUE((new Franc(5))->Equals(new Franc(5)));
-    ASSERT_FALSE((new Franc(5))->Equals(new Franc(6)));
-    ASSERT_FALSE((new Franc(5))->Equals(new Dolar(5)));
+    ASSERT_TRUE((money->dolar(5))->Equals(money->dolar(5)));
+    ASSERT_FALSE((money->dolar(5))->Equals(money->dolar(6)));
+    ASSERT_TRUE((money->franc(5)->Equals(money->franc(5))));
+    ASSERT_FALSE((money->franc(5))->Equals(money->franc(6)));
+    ASSERT_FALSE((money->dolar(5))->Equals(money->franc(5)));
 }
 
-TEST(Multiplicacao, TestfrancMultiplicacao){
-    Franc* five = new Franc(5);
-    Franc* Product = five->times(2);
-    EXPECT_EQ((new Franc(10))->Amount,Product->Amount);
+TEST(Multiplicacao, TestFrancMultiplicacao){
+    Money* money = new Money();
+    Money* five = money->franc(5);
+    Money* Product = five->times(2);
+    EXPECT_EQ((money->franc(10))->Amount,Product->Amount);
     Product = five->times(3);
-    EXPECT_EQ((new Franc(15))->Amount,Product->Amount);
+    EXPECT_EQ((money->franc(15))->Amount,Product->Amount);
 }
