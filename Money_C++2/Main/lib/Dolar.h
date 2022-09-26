@@ -1,8 +1,12 @@
 #include "Money.h"
 
 class Dolar : public Money{
+  
+  private:
+      int amount;
 
   public:
-     bool Equals(Money* other);
+     Dolar(int Amount);
+     Dolar* times(int multiplier);
    
 };

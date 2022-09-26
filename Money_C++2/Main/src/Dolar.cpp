@@ -3,6 +3,13 @@
 
 using namespace std;
 
-bool Dolar::Equals(Money* other){
-        return this->Amount == other->Amount;
+Dolar::Dolar(int Amount){
+    this->Amount = Amount;
+}
+
+
+
+Dolar* Dolar::times(int multiplier){
+
+        return new Dolar(Amount *multiplier);
 }

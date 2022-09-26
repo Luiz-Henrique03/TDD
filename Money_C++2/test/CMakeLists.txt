@@ -32,6 +32,9 @@ if(BUILD_TESTING)
     add_executable(
         money_test 
         Moneytest.cpp
+        /home/luiz/Money_C++/Main/src/Dolar.cpp
+        /home/luiz/Money_C++/Main/src/Money.cpp
+        /home/luiz/Money_C++/Main/src/Franc.cpp
     ) # add this executable
     
     target_link_libraries(

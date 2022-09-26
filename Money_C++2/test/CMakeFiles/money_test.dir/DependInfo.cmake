@@ -5,6 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/luiz/Money_C++/test/Moneytest.cpp" "/home/luiz/Money_C++/test/CMakeFiles/money_test.dir/Moneytest.cpp.o"
+  "/home/luiz/Money_C++/Main/src/Dolar.cpp" "/home/luiz/Money_C++/test/CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.o"
+  "/home/luiz/Money_C++/Main/src/Franc.cpp" "/home/luiz/Money_C++/test/CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.o"
+  "/home/luiz/Money_C++/Main/src/Money.cpp" "/home/luiz/Money_C++/test/CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

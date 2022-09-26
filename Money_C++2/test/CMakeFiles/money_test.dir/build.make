@@ -70,19 +70,64 @@ CMakeFiles/money_test.dir/Moneytest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/money_test.dir/Moneytest.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luiz/Money_C++/test/Moneytest.cpp -o CMakeFiles/money_test.dir/Moneytest.cpp.s
 
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.o: CMakeFiles/money_test.dir/flags.make
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.o: /home/luiz/Money_C++/Main/src/Dolar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luiz/Money_C++/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.o -c /home/luiz/Money_C++/Main/src/Dolar.cpp
+
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luiz/Money_C++/Main/src/Dolar.cpp > CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.i
+
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luiz/Money_C++/Main/src/Dolar.cpp -o CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.s
+
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o: CMakeFiles/money_test.dir/flags.make
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o: /home/luiz/Money_C++/Main/src/Money.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luiz/Money_C++/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o -c /home/luiz/Money_C++/Main/src/Money.cpp
+
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luiz/Money_C++/Main/src/Money.cpp > CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.i
+
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luiz/Money_C++/Main/src/Money.cpp -o CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.s
+
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.o: CMakeFiles/money_test.dir/flags.make
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.o: /home/luiz/Money_C++/Main/src/Franc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luiz/Money_C++/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.o -c /home/luiz/Money_C++/Main/src/Franc.cpp
+
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luiz/Money_C++/Main/src/Franc.cpp > CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.i
+
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luiz/Money_C++/Main/src/Franc.cpp -o CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.s
+
 # Object files for target money_test
 money_test_OBJECTS = \
-"CMakeFiles/money_test.dir/Moneytest.cpp.o"
+"CMakeFiles/money_test.dir/Moneytest.cpp.o" \
+"CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.o" \
+"CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o" \
+"CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.o"
 
 # External object files for target money_test
 money_test_EXTERNAL_OBJECTS =
 
 money_test: CMakeFiles/money_test.dir/Moneytest.cpp.o
+money_test: CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.o
+money_test: CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o
+money_test: CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.o
 money_test: CMakeFiles/money_test.dir/build.make
 money_test: lib/libgtest_main.a
 money_test: lib/libgtest.a
 money_test: CMakeFiles/money_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luiz/Money_C++/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable money_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luiz/Money_C++/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable money_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/money_test.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -D TEST_TARGET=money_test -D TEST_EXECUTABLE=/home/luiz/Money_C++/test/money_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/luiz/Money_C++/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=money_test_TESTS -D CTEST_FILE=/home/luiz/Money_C++/test/money_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -P /usr/share/cmake-3.16/Modules/GoogleTestAddTests.cmake
 
