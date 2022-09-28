@@ -9,33 +9,17 @@
 /home/luiz/Money_C++/Main/lib/Dolar.h
 Money.h
 /home/luiz/Money_C++/Main/lib/Money.h
+string
+-
 
 /home/luiz/Money_C++/Main/lib/Franc.h
 Money.h
 /home/luiz/Money_C++/Main/lib/Money.h
-
-/home/luiz/Money_C++/Main/lib/Money.h
-
-/home/luiz/Money_C++/Main/src/Dolar.cpp
-/home/luiz/Money_C++/Main/lib/Dolar.h
--
-/home/luiz/Money_C++/Main/lib/Money.h
+string
 -
 
-/home/luiz/Money_C++/Main/src/Franc.cpp
-/home/luiz/Money_C++/Main/lib/Franc.h
--
 /home/luiz/Money_C++/Main/lib/Money.h
--
-
-/home/luiz/Money_C++/Main/src/Money.cpp
-/home/luiz/Money_C++/Main/lib/Money.h
--
-/home/luiz/Money_C++/Main/lib/Dolar.h
--
-/home/luiz/Money_C++/Main/lib/Franc.h
--
-typeinfo
+string
 -
 
 /home/luiz/Money_C++/test/Moneytest.cpp

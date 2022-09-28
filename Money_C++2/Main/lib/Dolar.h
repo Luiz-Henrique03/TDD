@@ -1,11 +1,12 @@
 #include "Money.h"
+#include <string>
+using namespace std;
 
 class Dolar : public Money{
   
-  private:
-      int amount;
-
+  
   public:
-     Dolar(int Amount);
-   
+     Dolar(int Amount,string Currency);
+     string currency() override;  
+     Money* times(int amount);
 };

@@ -3,7 +3,20 @@
 
 using namespace std;
 
-Franc::Franc(int Amount){
+Franc::Franc(int Amount,string Currency){
     this->Amount = Amount;
+    this->Currency = "CHF";
 }
+
+string Franc::currency(){
+    return Currency;
+}
+
+Money* Franc::times(int multiplier){
+    Money* money = new Money();
+    return new Money(this->Amount * multiplier,this->Currency);
+}
+
+
+
 
