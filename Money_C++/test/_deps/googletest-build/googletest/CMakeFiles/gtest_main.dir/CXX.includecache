@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/luiz/TDD/Money_C++/test/_deps/googletest-src/googletest/src/gtest_main.cc
+/home/luiz/Money_C++/test/_deps/googletest-src/googletest/src/gtest_main.cc
 cstdio
 -
 gtest/gtest.h
-/home/luiz/TDD/Money_C++/test/_deps/googletest-src/googletest/src/gtest/gtest.h
+/home/luiz/Money_C++/test/_deps/googletest-src/googletest/src/gtest/gtest.h
 
 _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h
 memory

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luiz/TDD/Money_C++/test
+CMAKE_SOURCE_DIR = /home/luiz/Money_C++/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luiz/TDD/Money_C++/test
+CMAKE_BINARY_DIR = /home/luiz/Money_C++/test
 
 # Utility rule file for Experimental.
 
@@ -71,6 +71,6 @@ CMakeFiles/Experimental.dir/clean:
 .PHONY : CMakeFiles/Experimental.dir/clean
 
 CMakeFiles/Experimental.dir/depend:
-	cd /home/luiz/TDD/Money_C++/test && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luiz/TDD/Money_C++/test /home/luiz/TDD/Money_C++/test /home/luiz/TDD/Money_C++/test /home/luiz/TDD/Money_C++/test /home/luiz/TDD/Money_C++/test/CMakeFiles/Experimental.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/luiz/Money_C++/test && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luiz/Money_C++/test /home/luiz/Money_C++/test /home/luiz/Money_C++/test /home/luiz/Money_C++/test /home/luiz/Money_C++/test/CMakeFiles/Experimental.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Experimental.dir/depend
 

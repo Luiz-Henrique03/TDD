@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luiz/TDD/Money_C++/test
+CMAKE_SOURCE_DIR = /home/luiz/Money_C++/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luiz/TDD/Money_C++/test
+CMAKE_BINARY_DIR = /home/luiz/Money_C++/test
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luiz/TDD/Money_C++/test/CMakeFiles /home/luiz/TDD/Money_C++/test/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luiz/Money_C++/test/CMakeFiles /home/luiz/Money_C++/test/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luiz/TDD/Money_C++/test/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luiz/Money_C++/test/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -623,32 +623,86 @@ Moneytest.cpp.s:
 	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/Moneytest.cpp.s
 .PHONY : Moneytest.cpp.s
 
-home/luiz/TDD/Money_C++/main/src/Money.o: home/luiz/TDD/Money_C++/main/src/Money.cpp.o
+home/luiz/Money_C++/Main/src/Bank.o: home/luiz/Money_C++/Main/src/Bank.cpp.o
 
-.PHONY : home/luiz/TDD/Money_C++/main/src/Money.o
+.PHONY : home/luiz/Money_C++/Main/src/Bank.o
 
 # target to build an object file
-home/luiz/TDD/Money_C++/main/src/Money.cpp.o:
-	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/TDD/Money_C++/main/src/Money.cpp.o
-.PHONY : home/luiz/TDD/Money_C++/main/src/Money.cpp.o
+home/luiz/Money_C++/Main/src/Bank.cpp.o:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Bank.cpp.o
+.PHONY : home/luiz/Money_C++/Main/src/Bank.cpp.o
 
-home/luiz/TDD/Money_C++/main/src/Money.i: home/luiz/TDD/Money_C++/main/src/Money.cpp.i
+home/luiz/Money_C++/Main/src/Bank.i: home/luiz/Money_C++/Main/src/Bank.cpp.i
 
-.PHONY : home/luiz/TDD/Money_C++/main/src/Money.i
+.PHONY : home/luiz/Money_C++/Main/src/Bank.i
 
 # target to preprocess a source file
-home/luiz/TDD/Money_C++/main/src/Money.cpp.i:
-	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/TDD/Money_C++/main/src/Money.cpp.i
-.PHONY : home/luiz/TDD/Money_C++/main/src/Money.cpp.i
+home/luiz/Money_C++/Main/src/Bank.cpp.i:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Bank.cpp.i
+.PHONY : home/luiz/Money_C++/Main/src/Bank.cpp.i
 
-home/luiz/TDD/Money_C++/main/src/Money.s: home/luiz/TDD/Money_C++/main/src/Money.cpp.s
+home/luiz/Money_C++/Main/src/Bank.s: home/luiz/Money_C++/Main/src/Bank.cpp.s
 
-.PHONY : home/luiz/TDD/Money_C++/main/src/Money.s
+.PHONY : home/luiz/Money_C++/Main/src/Bank.s
 
 # target to generate assembly for a file
-home/luiz/TDD/Money_C++/main/src/Money.cpp.s:
-	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/TDD/Money_C++/main/src/Money.cpp.s
-.PHONY : home/luiz/TDD/Money_C++/main/src/Money.cpp.s
+home/luiz/Money_C++/Main/src/Bank.cpp.s:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Bank.cpp.s
+.PHONY : home/luiz/Money_C++/Main/src/Bank.cpp.s
+
+home/luiz/Money_C++/Main/src/Money.o: home/luiz/Money_C++/Main/src/Money.cpp.o
+
+.PHONY : home/luiz/Money_C++/Main/src/Money.o
+
+# target to build an object file
+home/luiz/Money_C++/Main/src/Money.cpp.o:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o
+.PHONY : home/luiz/Money_C++/Main/src/Money.cpp.o
+
+home/luiz/Money_C++/Main/src/Money.i: home/luiz/Money_C++/Main/src/Money.cpp.i
+
+.PHONY : home/luiz/Money_C++/Main/src/Money.i
+
+# target to preprocess a source file
+home/luiz/Money_C++/Main/src/Money.cpp.i:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.i
+.PHONY : home/luiz/Money_C++/Main/src/Money.cpp.i
+
+home/luiz/Money_C++/Main/src/Money.s: home/luiz/Money_C++/Main/src/Money.cpp.s
+
+.PHONY : home/luiz/Money_C++/Main/src/Money.s
+
+# target to generate assembly for a file
+home/luiz/Money_C++/Main/src/Money.cpp.s:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.s
+.PHONY : home/luiz/Money_C++/Main/src/Money.cpp.s
+
+home/luiz/Money_C++/Main/src/Sum.o: home/luiz/Money_C++/Main/src/Sum.cpp.o
+
+.PHONY : home/luiz/Money_C++/Main/src/Sum.o
+
+# target to build an object file
+home/luiz/Money_C++/Main/src/Sum.cpp.o:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.o
+.PHONY : home/luiz/Money_C++/Main/src/Sum.cpp.o
+
+home/luiz/Money_C++/Main/src/Sum.i: home/luiz/Money_C++/Main/src/Sum.cpp.i
+
+.PHONY : home/luiz/Money_C++/Main/src/Sum.i
+
+# target to preprocess a source file
+home/luiz/Money_C++/Main/src/Sum.cpp.i:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.i
+.PHONY : home/luiz/Money_C++/Main/src/Sum.cpp.i
+
+home/luiz/Money_C++/Main/src/Sum.s: home/luiz/Money_C++/Main/src/Sum.cpp.s
+
+.PHONY : home/luiz/Money_C++/Main/src/Sum.s
+
+# target to generate assembly for a file
+home/luiz/Money_C++/Main/src/Sum.cpp.s:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.s
+.PHONY : home/luiz/Money_C++/Main/src/Sum.cpp.s
 
 # Help Target
 help:
@@ -699,9 +753,15 @@ help:
 	@echo "... Moneytest.o"
 	@echo "... Moneytest.i"
 	@echo "... Moneytest.s"
-	@echo "... home/luiz/TDD/Money_C++/main/src/Money.o"
-	@echo "... home/luiz/TDD/Money_C++/main/src/Money.i"
-	@echo "... home/luiz/TDD/Money_C++/main/src/Money.s"
+	@echo "... home/luiz/Money_C++/Main/src/Bank.o"
+	@echo "... home/luiz/Money_C++/Main/src/Bank.i"
+	@echo "... home/luiz/Money_C++/Main/src/Bank.s"
+	@echo "... home/luiz/Money_C++/Main/src/Money.o"
+	@echo "... home/luiz/Money_C++/Main/src/Money.i"
+	@echo "... home/luiz/Money_C++/Main/src/Money.s"
+	@echo "... home/luiz/Money_C++/Main/src/Sum.o"
+	@echo "... home/luiz/Money_C++/Main/src/Sum.i"
+	@echo "... home/luiz/Money_C++/Main/src/Sum.s"
 .PHONY : help
 
 
