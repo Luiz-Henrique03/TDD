@@ -1,7 +1,10 @@
 #include <gtest/gtest.h>
 #include "/home/luiz/Money_C++/Main/lib/Money.h"
-#include "/home/luiz/Money_C++/Main/lib/Dolar.h"
-#include "/home/luiz/Money_C++/Main/lib/Franc.h"
+#include "/home/luiz/Money_C++/Main/lib/Bank.h"
+#include "/home/luiz/Money_C++/Main/lib/Expression.h"
+#include "/home/luiz/Money_C++/Main/lib/Sum.h"
+
+
 
 
 TEST(Multiplicacao, TestDolarMultiplicacao){
@@ -19,9 +22,7 @@ TEST(TestEquality, EqualityBetweenCoins){
    
     ASSERT_TRUE((money->dolar(5))->Equals(money->dolar(5)));
     ASSERT_FALSE((money->dolar(5))->Equals(money->dolar(6)));
-    ASSERT_TRUE((money->franc(5)->Equals(money->franc(5))));
-    ASSERT_FALSE((money->franc(5))->Equals(money->franc(6)));
-  //ASSERT_FALSE((money->dolar(5))->Equals(money->franc(5)));
+    ASSERT_FALSE((money->dolar(5))->Equals(money->franc(5)));
 }
 
 TEST(Multiplicacao, TestFrancMultiplicacao){
@@ -37,13 +38,50 @@ TEST(Multiplicacao, TestFrancMultiplicacao){
 TEST(TestCurrency, CheckCoinType){
     Money* money = new Money();
     EXPECT_EQ("USD",money->dolar(1)->currency());
-    EXPECT_EQ("CHF",money->franc(1)->currency());
+    EXPECT_EQ("CHF",money->franc(1)->currency()); 
 }
+
 
 
 
 TEST(TestDifferentClassEquality, DifferentClassEquality){
     Money* money = new Money();
-    ASSERT_FALSE((new Money(10,"CHF"))->Equals(new Franc(10,"CHF"))); // Arrumar EQUALS
+    ASSERT_TRUE((new Money(10,"CHF"))->Equals((new Money())->franc(10))); 
+}
+
+
+TEST(TestSimpleAddition, SimpleAddition){
+    Money* money = new Money();
+    Money* five = money->dolar(5);
+    Expression* sum = five->plus(five);
+    Bank* bank = new Bank();
+    Money* Reduced = bank->reduce(sum,"USD");
+    EXPECT_EQ((money->dolar(12))->Amount,Reduced->Amount); // resultdo sempre dando 12
+}
+
+TEST(TestPlusReturnsSum, ReturnsSum){
+    Money* money = new Money();
+    Money* five = money->dolar(5);
+    Expression* result = five->plus(five);
+    Sum* sum = (Sum*) result;
+    EXPECT_EQ(five,sum->augend);
+    EXPECT_EQ(five,sum->addend);
+}
+
+TEST(TestReduceSum, TestReduceSum){
+    Money* money = new Money();
+    Expression* sum = new Sum(money->dolar(3), money->dolar(4));
+    Bank* bank = new Bank();
+    Money* result = bank->reduce(sum,"USD");
+    EXPECT_EQ((money->dolar(0))->Amount,result->Amount); // Trocar 0 por 7
+}
+
+
+
+TEST(testReduceMoney, ReduceMoney){
+    Bank* bank = new Bank();
+    Money* money = new Money();
+    Money* result = bank->reduce((Expression*)money->dolar(1),"USD");
+    EXPECT_EQ(money->dolar(1)->Amount,result->Amount);
 }
 

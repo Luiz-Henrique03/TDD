@@ -1,6 +1,7 @@
 #include "/home/luiz/Money_C++/Main/lib/Money.h"
-#include "/home/luiz/Money_C++/Main/lib/Dolar.h"
-#include "/home/luiz/Money_C++/Main/lib/Franc.h"
+#include "/home/luiz/Money_C++/Main/lib/Expression.h"
+#include "/home/luiz/Money_C++/Main/lib/Sum.h"
+
 
 using namespace std;
 
@@ -13,12 +14,12 @@ Money::Money(int Amount, string Currency){
     this->Currency = Currency;
 }
 
-Dolar* Money::dolar(int amount){
-    return new Dolar(amount,"USD");
+Money* Money::dolar(int amount){
+    return new Money(amount,"USD");
 }
 
-Franc* Money::franc(int amount){
-    return new Franc(amount,"CHF");
+Money* Money::franc(int amount){
+    return new Money(amount,"CHF");
 }
 
 bool Money::Equals(Money* other){
@@ -36,4 +37,9 @@ string Money::currency(){
 
 string Money::toString(){
     return this->Amount+ " "+this->Currency;
+}
+
+
+Expression* Money::plus(Money* addend){
+    return new Sum(this,addend);
 }

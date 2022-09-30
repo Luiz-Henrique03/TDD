@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/money_test.dir/Moneytest.cpp.o"
-  "CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Dolar.cpp.o"
-  "CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Franc.cpp.o"
+  "CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Bank.cpp.o"
   "CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o"
+  "CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.o"
   "money_test"
   "money_test.pdb"
   "money_test[1]_tests.cmake"
