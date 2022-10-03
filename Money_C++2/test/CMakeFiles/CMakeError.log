@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/luiz/Money_C++/test/CMakeFiles/CMakeTmp
+Change Dir: /home/luiz/TDD/Money_C++2/test/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c6c10/fast && /usr/bin/make -f CMakeFiles/cmTC_c6c10.dir/build.make CMakeFiles/cmTC_c6c10.dir/build
-make[1]: Entrando no diretório '/home/luiz/Money_C++/test/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c6c10.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c6c10.dir/src.c.o   -c /home/luiz/Money_C++/test/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_c6c10
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6c10.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_c6c10.dir/src.c.o  -o cmTC_c6c10 
-/usr/bin/ld: CMakeFiles/cmTC_c6c10.dir/src.c.o: na função "main":
+Run Build Command(s):/usr/bin/make cmTC_6c245/fast && /usr/bin/make -f CMakeFiles/cmTC_6c245.dir/build.make CMakeFiles/cmTC_6c245.dir/build
+make[1]: Entrando no diretório '/home/luiz/TDD/Money_C++2/test/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6c245.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_6c245.dir/src.c.o   -c /home/luiz/TDD/Money_C++2/test/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6c245
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c245.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_6c245.dir/src.c.o  -o cmTC_6c245 
+/usr/bin/ld: CMakeFiles/cmTC_6c245.dir/src.c.o: na função "main":
 src.c:(.text+0x46): referência não definida para "pthread_create"
 /usr/bin/ld: src.c:(.text+0x52): referência não definida para "pthread_detach"
 /usr/bin/ld: src.c:(.text+0x63): referência não definida para "pthread_join"
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_c6c10.dir/build.make:87: cmTC_c6c10] Erro 1
-make[1]: Saindo do diretório '/home/luiz/Money_C++/test/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_c6c10/fast] Erro 2
+make[1]: *** [CMakeFiles/cmTC_6c245.dir/build.make:87: cmTC_6c245] Erro 1
+make[1]: Saindo do diretório '/home/luiz/TDD/Money_C++2/test/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6c245/fast] Erro 2
 
 
 Source file was:
@@ -39,20 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/luiz/Money_C++/test/CMakeFiles/CMakeTmp
+Change Dir: /home/luiz/TDD/Money_C++2/test/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_98133/fast && /usr/bin/make -f CMakeFiles/cmTC_98133.dir/build.make CMakeFiles/cmTC_98133.dir/build
-make[1]: Entrando no diretório '/home/luiz/Money_C++/test/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_98133.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_98133.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_98133
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98133.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_98133.dir/CheckFunctionExists.c.o  -o cmTC_98133  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_0c381/fast && /usr/bin/make -f CMakeFiles/cmTC_0c381.dir/build.make CMakeFiles/cmTC_0c381.dir/build
+make[1]: Entrando no diretório '/home/luiz/TDD/Money_C++2/test/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0c381.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0c381.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0c381
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c381.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0c381.dir/CheckFunctionExists.c.o  -o cmTC_0c381  -lpthreads 
 /usr/bin/ld: não foi possível localizar -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_98133.dir/build.make:87: cmTC_98133] Erro 1
-make[1]: Saindo do diretório '/home/luiz/Money_C++/test/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_98133/fast] Erro 2
+make[1]: *** [CMakeFiles/cmTC_0c381.dir/build.make:87: cmTC_0c381] Erro 1
+make[1]: Saindo do diretório '/home/luiz/TDD/Money_C++2/test/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0c381/fast] Erro 2
 
 
 

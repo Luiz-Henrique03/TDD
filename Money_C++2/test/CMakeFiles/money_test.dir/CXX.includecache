@@ -9,16 +9,18 @@
 /home/luiz/Money_C++/Main/lib/Bank.h
 string
 -
-Money.h
-/home/luiz/Money_C++/Main/lib/Money.h
-
+Expression.h
 /home/luiz/Money_C++/Main/lib/Expression.h
 Money.h
 /home/luiz/Money_C++/Main/lib/Money.h
 
+/home/luiz/Money_C++/Main/lib/Expression.h
+
 /home/luiz/Money_C++/Main/lib/Money.h
 string
 -
+Expression.h
+/home/luiz/Money_C++/Main/lib/Expression.h
 
 /home/luiz/Money_C++/Main/lib/Sum.h
 Expression.h
@@ -27,21 +29,17 @@ Money.h
 /home/luiz/Money_C++/Main/lib/Money.h
 
 /home/luiz/Money_C++/Main/src/Bank.cpp
-/home/luiz/Money_C++/Main/lib/Expression.h
--
-/home/luiz/Money_C++/Main/lib/Money.h
--
 /home/luiz/Money_C++/Main/lib/Bank.h
 -
 /home/luiz/Money_C++/Main/lib/Sum.h
 -
-iostream
+/home/luiz/Money_C++/Main/lib/Expression.h
+-
+string
 -
 
 /home/luiz/Money_C++/Main/src/Money.cpp
 /home/luiz/Money_C++/Main/lib/Money.h
--
-/home/luiz/Money_C++/Main/lib/Expression.h
 -
 /home/luiz/Money_C++/Main/lib/Sum.h
 -
@@ -50,7 +48,7 @@ iostream
 /home/luiz/Money_C++/Main/lib/Sum.h
 -
 
-/home/luiz/Money_C++/test/Moneytest.cpp
+/home/luiz/TDD/Money_C++2/test/Moneytest.cpp
 gtest/gtest.h
 -
 /home/luiz/Money_C++/Main/lib/Money.h

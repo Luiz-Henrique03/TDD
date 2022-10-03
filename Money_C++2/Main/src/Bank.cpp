@@ -17,7 +17,7 @@ Bank::Bank(){
 Money* Bank::reduce(Expression* source, string to){
 
    if(instanceof<Money>(source)){
-      return (Money*)source;
+      return (Money*)source->reduce(to);
    }
 
    Sum* sum = (Sum*) source;

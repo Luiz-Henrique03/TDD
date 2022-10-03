@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luiz/Money_C++/test
+CMAKE_SOURCE_DIR = /home/luiz/TDD/Money_C++2/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luiz/Money_C++/test
+CMAKE_BINARY_DIR = /home/luiz/TDD/Money_C++2/test
 
 # Utility rule file for ContinuousConfigure.
 
@@ -71,6 +71,6 @@ CMakeFiles/ContinuousConfigure.dir/clean:
 .PHONY : CMakeFiles/ContinuousConfigure.dir/clean
 
 CMakeFiles/ContinuousConfigure.dir/depend:
-	cd /home/luiz/Money_C++/test && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luiz/Money_C++/test /home/luiz/Money_C++/test /home/luiz/Money_C++/test /home/luiz/Money_C++/test /home/luiz/Money_C++/test/CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/luiz/TDD/Money_C++2/test && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luiz/TDD/Money_C++2/test /home/luiz/TDD/Money_C++2/test /home/luiz/TDD/Money_C++2/test /home/luiz/TDD/Money_C++2/test /home/luiz/TDD/Money_C++2/test/CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousConfigure.dir/depend
 

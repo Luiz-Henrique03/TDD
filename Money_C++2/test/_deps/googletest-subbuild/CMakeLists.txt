@@ -12,8 +12,8 @@ project(googletest-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(googletest-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/google/googletest.git" "GIT_TAG" "release-1.12.1"
-                    SOURCE_DIR          "/home/luiz/Money_C++/test/_deps/googletest-src"
-                    BINARY_DIR          "/home/luiz/Money_C++/test/_deps/googletest-build"
+                    SOURCE_DIR          "/home/luiz/TDD/Money_C++2/test/_deps/googletest-src"
+                    BINARY_DIR          "/home/luiz/TDD/Money_C++2/test/_deps/googletest-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

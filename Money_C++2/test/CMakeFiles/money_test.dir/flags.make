@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/luiz/Money_C++/test/inc -isystem /home/luiz/Money_C++/test/_deps/googletest-src/googletest/include -isystem /home/luiz/Money_C++/test/_deps/googletest-src/googletest 
+CXX_INCLUDES = -I/home/luiz/TDD/Money_C++2/test/inc -isystem /home/luiz/TDD/Money_C++2/test/_deps/googletest-src/googletest/include -isystem /home/luiz/TDD/Money_C++2/test/_deps/googletest-src/googletest 
 

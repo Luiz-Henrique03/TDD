@@ -56,7 +56,7 @@ TEST(TestSimpleAddition, SimpleAddition){
     Expression* sum = five->plus(five);
     Bank* bank = new Bank();
     Money* Reduced = bank->reduce(sum,"USD");
-    EXPECT_EQ((money->dolar(12))->Amount,Reduced->Amount); // resultdo sempre dando 12
+    EXPECT_EQ((money->dolar(10))->Amount,Reduced->Amount); // resultdo sempre dando 12
 }
 
 TEST(TestPlusReturnsSum, ReturnsSum){
@@ -73,7 +73,7 @@ TEST(TestReduceSum, TestReduceSum){
     Expression* sum = new Sum(money->dolar(3), money->dolar(4));
     Bank* bank = new Bank();
     Money* result = bank->reduce(sum,"USD");
-    EXPECT_EQ((money->dolar(0))->Amount,result->Amount); // Trocar 0 por 7
+    EXPECT_EQ((money->dolar(7))->Amount,result->Amount); // Trocar 0 por 7
 }
 
 

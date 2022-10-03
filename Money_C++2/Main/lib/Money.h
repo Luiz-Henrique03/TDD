@@ -21,5 +21,6 @@ class Money{
      virtual Expression* plus(Money* addend);
      virtual string currency();
      string toString();
+     Money* reduce(string to);
 
 };
