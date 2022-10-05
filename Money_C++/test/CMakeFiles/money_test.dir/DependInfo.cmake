@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/luiz/Money_C++/test/Moneytest.cpp" "/home/luiz/Money_C++/test/CMakeFiles/money_test.dir/Moneytest.cpp.o"
   "/home/luiz/Money_C++/Main/src/Bank.cpp" "/home/luiz/Money_C++/test/CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Bank.cpp.o"
   "/home/luiz/Money_C++/Main/src/Money.cpp" "/home/luiz/Money_C++/test/CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o"
+  "/home/luiz/Money_C++/Main/src/Sum.cpp" "/home/luiz/Money_C++/test/CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

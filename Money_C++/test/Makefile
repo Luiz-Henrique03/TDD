@@ -677,6 +677,33 @@ home/luiz/Money_C++/Main/src/Money.cpp.s:
 	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.s
 .PHONY : home/luiz/Money_C++/Main/src/Money.cpp.s
 
+home/luiz/Money_C++/Main/src/Sum.o: home/luiz/Money_C++/Main/src/Sum.cpp.o
+
+.PHONY : home/luiz/Money_C++/Main/src/Sum.o
+
+# target to build an object file
+home/luiz/Money_C++/Main/src/Sum.cpp.o:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.o
+.PHONY : home/luiz/Money_C++/Main/src/Sum.cpp.o
+
+home/luiz/Money_C++/Main/src/Sum.i: home/luiz/Money_C++/Main/src/Sum.cpp.i
+
+.PHONY : home/luiz/Money_C++/Main/src/Sum.i
+
+# target to preprocess a source file
+home/luiz/Money_C++/Main/src/Sum.cpp.i:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.i
+.PHONY : home/luiz/Money_C++/Main/src/Sum.cpp.i
+
+home/luiz/Money_C++/Main/src/Sum.s: home/luiz/Money_C++/Main/src/Sum.cpp.s
+
+.PHONY : home/luiz/Money_C++/Main/src/Sum.s
+
+# target to generate assembly for a file
+home/luiz/Money_C++/Main/src/Sum.cpp.s:
+	$(MAKE) -f CMakeFiles/money_test.dir/build.make CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.s
+.PHONY : home/luiz/Money_C++/Main/src/Sum.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -732,6 +759,9 @@ help:
 	@echo "... home/luiz/Money_C++/Main/src/Money.o"
 	@echo "... home/luiz/Money_C++/Main/src/Money.i"
 	@echo "... home/luiz/Money_C++/Main/src/Money.s"
+	@echo "... home/luiz/Money_C++/Main/src/Sum.o"
+	@echo "... home/luiz/Money_C++/Main/src/Sum.i"
+	@echo "... home/luiz/Money_C++/Main/src/Sum.s"
 .PHONY : help
 
 

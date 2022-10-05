@@ -1,5 +1,6 @@
 #include "/home/luiz/Money_C++/Main/lib/Money.h"
 #include "/home/luiz/Money_C++/Main/lib/Expression.h"
+#include "/home/luiz/Money_C++/Main/lib/Sum.h"
 
 
 using namespace std;
@@ -38,7 +39,7 @@ string Money::toString(){
     return this->Amount+ " "+this->Currency;
 }
 
-
 Expression* Money::plus(Money* addend){
-    return new Money(Amount + addend->Amount, Currency);
+    return new Sum(this,addend);
 }
+

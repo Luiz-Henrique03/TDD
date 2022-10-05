@@ -22,6 +22,7 @@ class Money : public Expression{
      virtual Expression* plus(Money* addend);
      virtual string currency();
      string toString();
-     
+     Money* reduce(string to);
+
 
 };

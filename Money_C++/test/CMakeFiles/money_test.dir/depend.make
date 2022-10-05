@@ -4,6 +4,7 @@
 CMakeFiles/money_test.dir/Moneytest.cpp.o: /home/luiz/Money_C++/Main/lib/Bank.h
 CMakeFiles/money_test.dir/Moneytest.cpp.o: /home/luiz/Money_C++/Main/lib/Expression.h
 CMakeFiles/money_test.dir/Moneytest.cpp.o: /home/luiz/Money_C++/Main/lib/Money.h
+CMakeFiles/money_test.dir/Moneytest.cpp.o: /home/luiz/Money_C++/Main/lib/Sum.h
 CMakeFiles/money_test.dir/Moneytest.cpp.o: Moneytest.cpp
 CMakeFiles/money_test.dir/Moneytest.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h
 CMakeFiles/money_test.dir/Moneytest.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest-death-test.h
@@ -30,9 +31,16 @@ CMakeFiles/money_test.dir/Moneytest.cpp.o: _deps/googletest-src/googletest/inclu
 CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Bank.cpp.o: /home/luiz/Money_C++/Main/lib/Bank.h
 CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Bank.cpp.o: /home/luiz/Money_C++/Main/lib/Expression.h
 CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Bank.cpp.o: /home/luiz/Money_C++/Main/lib/Money.h
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Bank.cpp.o: /home/luiz/Money_C++/Main/lib/Sum.h
 CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Bank.cpp.o: /home/luiz/Money_C++/Main/src/Bank.cpp
 
 CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o: /home/luiz/Money_C++/Main/lib/Expression.h
 CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o: /home/luiz/Money_C++/Main/lib/Money.h
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o: /home/luiz/Money_C++/Main/lib/Sum.h
 CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Money.cpp.o: /home/luiz/Money_C++/Main/src/Money.cpp
+
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.o: /home/luiz/Money_C++/Main/lib/Expression.h
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.o: /home/luiz/Money_C++/Main/lib/Money.h
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.o: /home/luiz/Money_C++/Main/lib/Sum.h
+CMakeFiles/money_test.dir/home/luiz/Money_C++/Main/src/Sum.cpp.o: /home/luiz/Money_C++/Main/src/Sum.cpp
 

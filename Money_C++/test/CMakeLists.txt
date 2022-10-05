@@ -34,6 +34,7 @@ if(BUILD_TESTING)
         Moneytest.cpp
         /home/luiz/Money_C++/Main/src/Money.cpp   
         /home/luiz/Money_C++/Main/src/Bank.cpp   
+        /home/luiz/Money_C++/Main/src/Sum.cpp   
     ) # add this executable
     
     target_link_libraries(

@@ -2,6 +2,7 @@
 #include "/home/luiz/Money_C++/Main/lib/Money.h"
 #include "/home/luiz/Money_C++/Main/lib/Bank.h"
 #include "/home/luiz/Money_C++/Main/lib/Expression.h"
+#include "/home/luiz/Money_C++/Main/lib/Sum.h"
 
 
 
@@ -56,7 +57,7 @@ TEST(TestSimpleAddition, SimpleAddition){
 
 }
 
-/*
+
 TEST(TestPlusReturnsSum, ReturnsSum){
     Money* money = new Money();
     Money* five = money->dolar(5);
@@ -65,6 +66,7 @@ TEST(TestPlusReturnsSum, ReturnsSum){
     EXPECT_EQ(five,sum->augend);
     EXPECT_EQ(five,sum->addend);
 }
+
 
 TEST(TestReduceSum, TestReduceSum){
     Money* money = new Money();
@@ -82,4 +84,11 @@ TEST(testReduceMoney, ReduceMoney){
     Money* result = bank->reduce(sum,"USD");
     EXPECT_EQ(money->dolar(1)->Amount,result->Amount);
 }
-*/
+
+/*
+TEST(testReduceMoneyDifferentCurrency,ReduceMoneyDifferentCurrency){
+    Bank* bank = new Bank();
+    bank->addRate("CHF","USD",2);
+
+}
+*?

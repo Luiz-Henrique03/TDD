@@ -1,4 +1,8 @@
 #pragma once
-class Expression{
+#include <string>
+class Money;
+using namespace std;
 
+class Expression{
+   public:
 };
