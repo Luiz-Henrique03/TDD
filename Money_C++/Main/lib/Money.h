@@ -4,7 +4,7 @@
 #pragma once
 
 using namespace std;
-
+class Bank;
 
 class Money : public Expression{
    
@@ -22,7 +22,5 @@ class Money : public Expression{
      virtual Expression* plus(Money* addend);
      virtual string currency();
      string toString();
-     Money* reduce(string to);
-
-
+     Money* reduce(Bank* bank, string to);
 };

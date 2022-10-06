@@ -5,6 +5,7 @@
 #include "/home/luiz/Money_C++/Main/lib/Sum.h"
 
 
+using namespace std;
 
 TEST(Multiplicacao, TestDolarMultiplicacao){
     Money* money = new Money();
@@ -85,10 +86,63 @@ TEST(testReduceMoney, ReduceMoney){
     EXPECT_EQ(money->dolar(1)->Amount,result->Amount);
 }
 
-/*
+
 TEST(testReduceMoneyDifferentCurrency,ReduceMoneyDifferentCurrency){
     Bank* bank = new Bank();
+    Money* money = new Money();
     bank->addRate("CHF","USD",2);
+    Money* result = bank->reduce(money->franc(2),"USD");
+    EXPECT_NE(money->dolar(1)->Amount,result->Amount);
+}
+
+
+TEST(TestArrayEquals,ArrayEquals){
+    string test1[1] = {"abc"};
+    string test2[1] = {"abc"};
+    EXPECT_EQ(*test1,*test2);
+}
+
+TEST(testIdentityRate, IdentityRate){
+    EXPECT_EQ(1, (new Bank())->Rate("USD","USD"));
+}
+
+
+TEST(testMixedAddition, MixedAdditon){
+    Money* money = new Money();
+    Money* fiveBucks = money->dolar(5);
+    Money* tenFrancs = money->franc(10);
+    Bank* bank = new Bank();
+    bank->addRate("CHF","USD",2);
+    Money* result = bank->reduce(fiveBucks->plus(tenFrancs),"USD");
+    EXPECT_EQ(money->dolar(15)->Amount,result->Amount);
 
 }
-*?
+
+TEST(testSumPlusMoney, SumPlusMoney){
+    Money* money = new Money();
+    Money* fiveBucks = money->franc(5);
+    Money* tenFrancs = money->franc(10);
+    Bank* bank = new Bank();
+    bank->addRate("CHF","USD",2);
+    Expression* sum = (new Sum(fiveBucks,tenFrancs))->plus(fiveBucks);
+    Money* result = bank->reduce(fiveBucks->plus(tenFrancs),"USD");
+    EXPECT_EQ(money->dolar(15)->Amount, result->Amount);
+}
+
+TEST(testSumTimesMoney, SumTimesMoney){
+    Money* money = new Money();
+    Money* fiveBucks = money->franc(5);
+    Money* tenFrancs = money->franc(10);
+    Bank* bank = new Bank();
+    bank->addRate("CHF","USD",2);
+    Expression* sum = (new Sum(fiveBucks,tenFrancs))->times(2);
+    Money* result = bank->reduce(fiveBucks->plus(tenFrancs),"USD");
+    EXPECT_EQ(money->dolar(15)->Amount, result->Amount);
+}
+
+TEST(testPlusSameCurrency, PlusSameCurrency){
+    Money* money = new Money();
+    Expression*  sum = money->dolar(1)->plus(money->dolar(1));
+    ASSERT_TRUE((is_base_of<Expression,Money>::value));
+}
+
