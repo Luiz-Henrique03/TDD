@@ -1,5 +1,0 @@
-if(EXISTS "/home/luiz/TDD/Money_C++2/test/money_test[1]_tests.cmake")
-  include("/home/luiz/TDD/Money_C++2/test/money_test[1]_tests.cmake")
-else()
-  add_test(money_test_NOT_BUILT money_test_NOT_BUILT)
-endif()

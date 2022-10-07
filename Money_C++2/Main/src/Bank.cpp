@@ -1,13 +1,7 @@
-#include "/home/luiz/Money_C++/Main/lib/Expression.h"
-#include "/home/luiz/Money_C++/Main/lib/Money.h"
-#include "/home/luiz/Money_C++/Main/lib/Bank.h"
-#include "/home/luiz/Money_C++/Main/lib/Sum.h"
-#include <iostream>
-
-template<typename Base, typename T>
-inline bool instanceof(const T *ptr) {
-   return dynamic_cast<const Base*>(ptr) != nullptr;
-}
+#include "/home/luiz/Money_C++2/Main/lib/Bank.h"
+#include "/home/luiz/Money_C++2/Main/lib/Money.h"
+#include "/home/luiz/Money_C++2/Main/lib/Sum.h"
+#include <map>
 
 
 Bank::Bank(){
@@ -15,11 +9,17 @@ Bank::Bank(){
 }
 
 Money* Bank::reduce(Expression* source, string to){
+    Sum* sum = (Sum*) source;
+    return sum->reduce(this,to);
+}
 
-   if(instanceof<Money>(source)){
-      return (Money*)source->reduce(to);
-   }
+int Bank::Rate(string from, string to){
+    if(from == to) return 1;
+    
+    int rate = this->rates.at({from,to});
+    return rate;
+}
 
-   Sum* sum = (Sum*) source;
-   return sum->reduce(to);
+void Bank::addRate(string from, string to, int rate){
+    rates.insert({{from,to},rate});
 }
