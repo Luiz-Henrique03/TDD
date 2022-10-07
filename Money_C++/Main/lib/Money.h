@@ -19,8 +19,8 @@ class Money : public Expression{
      Money();
      Money(int Amount, string Currency);
      Money* times(int multiplier);
-     virtual Expression* plus(Money* addend);
-     virtual string currency();
+     Expression* plus(Money* addend);
+     string currency();
      string toString();
      Money* reduce(Bank* bank, string to);
 };
