@@ -8,12 +8,17 @@ using namespace std;
 
 int main(){
     Money* money = new Money();
-    Money* five = money->dolar(5);
-    Money* ten = money->franc(10);
+    
+    Money* five = money->dolar(5),
+           *ten = money->franc(10),
+           *result = 0;
+
     Bank* bank = new Bank();
+
     bank->addRate("CHF","USD",2);
     Expression* sum = (new Sum(five, ten));
-    Money* result = bank->reduce(sum,"USD");
-    cout << result->toString();
+    result = bank->reduce(sum,"USD");
+    cout << result->toString()<<endl;
+
     delete(money,five,ten,bank);
 }

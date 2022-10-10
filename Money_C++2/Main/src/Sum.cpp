@@ -14,6 +14,7 @@ Money* Sum::reduce(Bank* bank, string to){
 Expression* Sum::plus(Expression* addend){
     Money* sumAddend = (Money*) addend;
     return new Sum((Money*)this,sumAddend);
+    
     delete(sumAddend);
 }
 

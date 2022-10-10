@@ -13,6 +13,7 @@ add_executable(
   Money.cpp
   Sum.cpp
   Pair.cpp
+  Expression.cpp
 )
 target_link_libraries(
   Test

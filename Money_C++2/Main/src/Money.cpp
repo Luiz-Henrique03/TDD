@@ -45,5 +45,6 @@ Expression* Money::plus(Expression* addend){
 
 Money* Money::reduce(Bank* bank, string to){
     int rate = bank->Rate(Currency,to);
+    
     return new Money(Amount / rate, to);
 }
