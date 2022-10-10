@@ -34,7 +34,7 @@ TEST(Multiplicacao, TestFrancMultiplicacao){
     EXPECT_EQ((money->franc(10))->Amount,Product->Amount);
     Product = five->times(3);
     EXPECT_EQ((money->franc(15))->Amount,Product->Amount);
-    delete(money,five,product);
+    delete(money,five,Product);
 }
 
 
@@ -63,7 +63,6 @@ TEST(TestSimpleAddition, SimpleAddition){
     delete(money,five,sum,bank,reduced);
 }
 
-
 TEST(TestPlusReturnsSum, ReturnsSum){
     Money* money = new Money();
     Money* five = money->dolar(5);
@@ -74,7 +73,6 @@ TEST(TestPlusReturnsSum, ReturnsSum){
     delete(money,five,result,sum);
 }
 
-
 TEST(TestReduceSum, TestReduceSum){
     Money* money = new Money();
     Expression* sum = new Sum(money->dolar(3), money->dolar(4));
@@ -83,7 +81,6 @@ TEST(TestReduceSum, TestReduceSum){
     EXPECT_EQ((money->dolar(7))->Amount,result->Amount);
     delete(money,sum,bank,result);
 }
-
 
 TEST(testReduceMoney, ReduceMoney){
     Bank* bank = new Bank();
@@ -100,10 +97,9 @@ TEST(testReduceMoneyDifferentCurrency,ReduceMoneyDifferentCurrency){
     Money* money = new Money();
     bank->addRate("CHF","USD",2);
     Money* result = bank->reduce(money->franc(2),"USD");
-    EXPECT_NE(money->dolar(1)->Amount,result->Amount);
+    EXPECT_EQ(money->dolar(1)->Amount,result->Amount);
     delete(bank,money,result);
 }
-
 
 TEST(TestArrayEquals,ArrayEquals){
     string test1[1] = {"abc"};
