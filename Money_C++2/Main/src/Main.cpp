@@ -14,6 +14,6 @@ int main(){
     bank->addRate("CHF","USD",2);
     Expression* sum = (new Sum(five, ten));
     Money* result = bank->reduce(sum,"USD");
-    cout << result->Amount << endl;
-    cout << result->currency() << endl;
+    cout << result->toString();
+    delete(money,five,ten,bank);
 }

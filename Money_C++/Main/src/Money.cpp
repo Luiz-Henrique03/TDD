@@ -25,6 +25,7 @@ Money* Money::franc(int amount){
 bool Money::Equals(Money* other){
     Money* money = (Money*) other;
     return this->Amount == money->Amount && this->Currency == money->Currency;
+    delete(money);
 }
 
 Money* Money::times(int multiplier){

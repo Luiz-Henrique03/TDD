@@ -1,6 +1,7 @@
 #include "/home/luiz/Money_C++2/Main/lib/Bank.h"
 #include "/home/luiz/Money_C++2/Main/lib/Money.h"
 #include "/home/luiz/Money_C++2/Main/lib/Sum.h"
+#include "/home/luiz/Money_C++2/Main/lib/Expression.h"
 #include <map>
 
 
@@ -11,6 +12,7 @@ Bank::Bank(){
 Money* Bank::reduce(Expression* source, string to){
     Sum* sum = (Sum*) source;
     return sum->reduce(this,to);
+    delete(sum);
 }
 
 int Bank::Rate(string from, string to){

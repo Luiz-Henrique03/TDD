@@ -16,5 +16,6 @@ int main(){
     Money* result = bank->reduce(sum,"USD");
     cout<< result->Amount <<endl;
     cout<< result->currency() <<endl;
-    delete (five,sum,ten,bank,money,result);
+    delete (five,ten,bank,money);
+     
 }

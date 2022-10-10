@@ -14,6 +14,7 @@ TEST(Multiplicacao, TestDolarMultiplicacao){
     EXPECT_EQ((money->dolar(10))->Amount,product->Amount);
     product = five->times(3);
     EXPECT_EQ((money->dolar(15))->Amount,product->Amount);
+    delete(money,five,product);
 }
 
 TEST(TestEquality, EqualityBetweenCoins){
@@ -23,6 +24,7 @@ TEST(TestEquality, EqualityBetweenCoins){
     ASSERT_TRUE((money->dolar(5))->Equals(money->dolar(5)));
     ASSERT_FALSE((money->dolar(5))->Equals(money->dolar(6)));
     ASSERT_FALSE((money->dolar(5))->Equals(money->franc(5)));
+    delete(money);
 }
 
 TEST(Multiplicacao, TestFrancMultiplicacao){
@@ -32,19 +34,22 @@ TEST(Multiplicacao, TestFrancMultiplicacao){
     EXPECT_EQ((money->franc(10))->Amount,Product->Amount);
     Product = five->times(3);
     EXPECT_EQ((money->franc(15))->Amount,Product->Amount);
+    delete(money,five,product);
 }
 
 
 TEST(TestCurrency, CheckCoinType){
     Money* money = new Money();
     EXPECT_EQ("USD",money->dolar(1)->currency());
-    EXPECT_EQ("CHF",money->franc(1)->currency()); 
+    EXPECT_EQ("CHF",money->franc(1)->currency());
+    delete(money); 
 }
 
 
 TEST(TestDifferentClassEquality, DifferentClassEquality){
     Money* money = new Money();
-    ASSERT_TRUE((new Money(10,"CHF"))->Equals((new Money())->franc(10))); 
+    ASSERT_TRUE((new Money(10,"CHF"))->Equals((new Money())->franc(10)));
+    delete(money); 
 }
 
 
@@ -55,7 +60,7 @@ TEST(TestSimpleAddition, SimpleAddition){
     Bank* bank = new Bank();
     Money* reduced = bank->reduce(sum,"USD");
     EXPECT_EQ(money->dolar(10)->Amount,reduced->Amount);
-
+    delete(money,five,sum,bank,reduced);
 }
 
 
@@ -66,6 +71,7 @@ TEST(TestPlusReturnsSum, ReturnsSum){
     Sum* sum = (Sum*) result;
     EXPECT_EQ(five,sum->augend);
     EXPECT_EQ(five,sum->addend);
+    delete(money,five,result,sum);
 }
 
 
@@ -74,7 +80,8 @@ TEST(TestReduceSum, TestReduceSum){
     Expression* sum = new Sum(money->dolar(3), money->dolar(4));
     Bank* bank = new Bank();
     Money* result = bank->reduce(sum,"USD");
-    EXPECT_EQ((money->dolar(7))->Amount,result->Amount); 
+    EXPECT_EQ((money->dolar(7))->Amount,result->Amount);
+    delete(money,sum,bank,result);
 }
 
 
@@ -84,6 +91,7 @@ TEST(testReduceMoney, ReduceMoney){
     Expression* sum = new Sum(money->dolar(1), money->dolar(0));
     Money* result = bank->reduce(sum,"USD");
     EXPECT_EQ(money->dolar(1)->Amount,result->Amount);
+    delete(bank,money,sum,result);
 }
 
 
@@ -93,6 +101,7 @@ TEST(testReduceMoneyDifferentCurrency,ReduceMoneyDifferentCurrency){
     bank->addRate("CHF","USD",2);
     Money* result = bank->reduce(money->franc(2),"USD");
     EXPECT_NE(money->dolar(1)->Amount,result->Amount);
+    delete(bank,money,result);
 }
 
 
@@ -115,7 +124,7 @@ TEST(testMixedAddition, MixedAdditon){
     bank->addRate("CHF","USD",2);
     Money* result = bank->reduce(fiveBucks->plus(tenFrancs),"USD");
     EXPECT_EQ(money->dolar(15)->Amount,result->Amount);
-
+    delete(money,fiveBucks,tenFrancs,bank,result);
 }
 
 TEST(testSumPlusMoney, SumPlusMoney){
@@ -127,6 +136,7 @@ TEST(testSumPlusMoney, SumPlusMoney){
     Expression* sum = (new Sum(fiveBucks,tenFrancs))->plus(fiveBucks);
     Money* result = bank->reduce(fiveBucks->plus(tenFrancs),"USD");
     EXPECT_EQ(money->dolar(15)->Amount, result->Amount);
+    delete(money,fiveBucks,tenFrancs,bank,sum,result);
 }
 
 TEST(testSumTimesMoney, SumTimesMoney){
@@ -138,11 +148,13 @@ TEST(testSumTimesMoney, SumTimesMoney){
     Expression* sum = (new Sum(fiveBucks,tenFrancs))->times(2);
     Money* result = bank->reduce(fiveBucks->plus(tenFrancs),"USD");
     EXPECT_EQ(money->dolar(15)->Amount, result->Amount);
+    delete(money,fiveBucks,tenFrancs,bank,sum,result);
 }
 
 TEST(testPlusSameCurrency, PlusSameCurrency){
     Money* money = new Money();
     Expression*  sum = money->dolar(1)->plus(money->dolar(1));
     ASSERT_TRUE((is_base_of<Expression,Money>::value));
+    delete(money,sum);
 }
 

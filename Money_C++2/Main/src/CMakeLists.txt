@@ -8,12 +8,11 @@ include(FetchContent)
 
 add_executable(
   Test
+  Main.cpp
   Bank.cpp
   Money.cpp
   Sum.cpp
   Pair.cpp
-  Expression.cpp
-  Main.cpp
 )
 target_link_libraries(
   Test
