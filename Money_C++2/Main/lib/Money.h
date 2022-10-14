@@ -22,4 +22,5 @@ class Money : public Expression{
      string currency();
      string toString();
      Money* reduce(Bank* bank, string to);
+     int getAmount();
 };

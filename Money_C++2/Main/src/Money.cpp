@@ -25,10 +25,11 @@ Money* Money::franc(int amount){
 bool Money::Equals(Money* other){
     Money* money = (Money*) other;
     return this->Amount == money->Amount && this->Currency == money->Currency;
+    delete(money);
 }
 
 Money* Money::times(int multiplier){
-    return new Money(Amount *multiplier,this->Currency);
+    return new Money(Amount * multiplier,this->Currency);
 }
 
 string Money::currency(){
@@ -45,6 +46,10 @@ Expression* Money::plus(Expression* addend){
 
 Money* Money::reduce(Bank* bank, string to){
     int rate = bank->Rate(Currency,to);
-    
+
     return new Money(Amount / rate, to);
+}
+
+int Money::getAmount(){
+    return this->Amount;
 }

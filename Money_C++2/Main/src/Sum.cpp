@@ -7,7 +7,7 @@ Sum::Sum(Expression* addend, Expression* augend){
 }
 
 Money* Sum::reduce(Bank* bank, string to){
-    int Amount = this->augend->Amount + this->addend->Amount;
+    int Amount = this->augend->getAmount() + this->addend->getAmount();
     return new Money(Amount,to);
 }
 

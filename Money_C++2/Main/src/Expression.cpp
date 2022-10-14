@@ -15,3 +15,7 @@ Expression* Expression::plus(Expression* addend){
 Expression* Expression::times(int multiplier){
     return nullptr;
 }
+
+int Expression::getAmount(){
+    return 0;
+}
