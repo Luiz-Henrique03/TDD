@@ -13,6 +13,7 @@ Money* Bank::reduce(Expression* source, string to){
     Sum* sum = (Sum*) source;
     return sum->reduce(this,to);
     delete(sum);
+
 }
 
 int Bank::Rate(string from, string to){

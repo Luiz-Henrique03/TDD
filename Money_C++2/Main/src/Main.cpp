@@ -21,7 +21,8 @@ int main(){
     Expression* sum = (new Sum(five, ten));
     result = bank->reduce(sum,"USD");
     delete(bank);
-    delete(five,ten);
+    delete(five);
+    delete(ten);
     delete(sum);
     cout << result->toString() << endl;
     delete(result);
