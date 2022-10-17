@@ -9,12 +9,13 @@ Sum::Sum(Expression* addend, Expression* augend){
 Money* Sum::reduce(Bank* bank, string to){
     int Amount = this->augend->getAmount() + this->addend->getAmount();
     return new Money(Amount,to);
+    delete(bank);
 }
 
 Expression* Sum::plus(Expression* addend){
     Money* sumAddend = (Money*) addend;
     return new Sum((Money*)this,sumAddend);
-    
+    delete(addend);
     delete(sumAddend);
 }
 

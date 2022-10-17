@@ -81,7 +81,7 @@ TEST(TestPlusReturnsSum, ReturnsSum){
     EXPECT_EQ(five,sum->addend);
     delete(money);
     delete(five);
-    delete(result);
+    delete(sum);
 }
 
 TEST(TestReduceSum, TestReduceSum){
@@ -130,7 +130,6 @@ TEST(testIdentityRate, IdentityRate){
     EXPECT_EQ(1, (new Bank())->Rate("USD","USD"));
 }
 
-
 TEST(testMixedAddition, MixedAdditon){
     Money* money = new Money();
     Money* fiveBucks = money->dolar(5);
@@ -159,6 +158,8 @@ TEST(testSumPlusMoney, SumPlusMoney){
     delete(fiveBucks);
     delete(tenFrancs);
     delete(bank);
+    delete(sum);
+    delete(result);
 }
 
 TEST(testSumTimesMoney, SumTimesMoney){
@@ -174,6 +175,8 @@ TEST(testSumTimesMoney, SumTimesMoney){
     delete(fiveBucks);
     delete(tenFrancs);
     delete(bank);
+    delete(sum);
+    delete(result);
 }
 
 TEST(testPlusSameCurrency, PlusSameCurrency){

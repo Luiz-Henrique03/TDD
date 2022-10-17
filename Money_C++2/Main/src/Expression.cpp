@@ -9,6 +9,7 @@ Money* Expression::reduce(Bank* bank, string to){
 }
 
 Expression* Expression::plus(Expression* addend){
+    delete(addend);
     return nullptr;
 }
 
