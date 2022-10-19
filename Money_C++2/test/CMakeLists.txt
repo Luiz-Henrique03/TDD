@@ -4,7 +4,7 @@ project(tdd-book)
 set(CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories(inc)
+include_directories(/home/luiz/Money_C++2/Main/inc)
 
 include(CTest)
 if(BUILD_TESTING)

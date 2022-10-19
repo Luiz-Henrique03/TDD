@@ -1,7 +1,9 @@
+#pragma once
+
+
 #include <string>
 #include "Expression.h"
 
-#pragma once
 
 using namespace std;
 class Bank;

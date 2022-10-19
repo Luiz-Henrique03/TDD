@@ -4,7 +4,7 @@ package Money.main;
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[]args) {
         Money five = Money.dollar(5);
         Money ten = Money.franc(10);
         Bank bank = new Bank();

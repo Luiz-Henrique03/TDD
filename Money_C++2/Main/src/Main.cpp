@@ -1,7 +1,7 @@
-#include "/home/luiz/Money_C++2/Main/lib/Bank.h"
-#include "/home/luiz/Money_C++2/Main/lib/Money.h"
-#include "/home/luiz/Money_C++2/Main/lib/Expression.h"
-#include "/home/luiz/Money_C++2/Main/lib/Sum.h"
+#include "Bank.h"
+#include "Money.h"
+#include "Expression.h"
+#include "Sum.h"
 #include <iostream>
 
 using namespace std;

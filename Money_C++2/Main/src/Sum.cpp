@@ -1,5 +1,5 @@
-#include "/home/luiz/Money_C++2/Main/lib/Sum.h"
-#include "/home/luiz/Money_C++2/Main/lib/Expression.h"
+#include "Sum.h"
+#include "Expression.h"
 
 Sum::Sum(Expression* addend, Expression* augend){
     this->addend = addend;

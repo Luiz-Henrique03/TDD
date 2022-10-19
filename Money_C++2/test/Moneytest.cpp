@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
-#include "/home/luiz/Money_C++2/Main/lib/Money.h"
-#include "/home/luiz/Money_C++2/Main/lib/Bank.h"
-#include "/home/luiz/Money_C++2/Main/lib/Expression.h"
-#include "/home/luiz/Money_C++2/Main/lib/Sum.h"
+#include "Money.h"
+#include "Bank.h"
+#include "Expression.h"
+#include "Sum.h"
 
 
 using namespace std;
@@ -11,11 +11,11 @@ TEST(Multiplicacao, TestDolarMultiplicacao){
     Money* money = new Money();
     Money* five = money->dolar(5);
     Money* product = five->times(2);
-    delete(five);
     EXPECT_EQ((money->dolar(10))->getAmount(),product->getAmount());
     product = five->times(3);
     EXPECT_EQ((money->dolar(15)->getAmount()),product->getAmount());
     delete(money);
+    delete(five);
     delete(product);
 }
 

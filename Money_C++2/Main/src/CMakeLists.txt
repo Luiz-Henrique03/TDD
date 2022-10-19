@@ -4,7 +4,9 @@ project(GTest)
 # GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 14)
 
-include(FetchContent)
+include_directories(/home/luiz/Money_C++2/Main/inc)
+# include_directories(inc)
+
 
 add_executable(
   Test

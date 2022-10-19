@@ -1,8 +1,9 @@
+#pragma once
+
 #include "Money.h"
 #include "Expression.h"
 #include <map>
 
-#pragma once
 
 class Bank{
    protected:
