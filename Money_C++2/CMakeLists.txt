@@ -4,7 +4,7 @@ project(tdd-book)
 set(CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories(/home/luiz/Money_C++2/Main/inc)
+include_directories(Main/inc)
 
 include(CTest)
 if(BUILD_TESTING)
@@ -32,11 +32,11 @@ if(BUILD_TESTING)
     add_executable(
         money_test 
         Moneytest.cpp
-        /home/luiz/Money_C++2/Main/src/Expression.cpp   
-        /home/luiz/Money_C++2/Main/src/Money.cpp   
-        /home/luiz/Money_C++2/Main/src/Bank.cpp   
-        /home/luiz/Money_C++2/Main/src/Sum.cpp   
-        /home/luiz/Money_C++2/Main/src/Pair.cpp   
+        Main/src/Expression.cpp
+        Main/src/Money.cpp
+        Main/src/Bank.cpp
+        Main/src/Sum.cpp
+        Main/src/Pair.cpp 
 
     ) # add this executable
     
